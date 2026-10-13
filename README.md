@@ -1,6 +1,6 @@
 # 🤖 Verzeta-Studio - Your AI Team, Working Together Offline
 
-[![Download Verzeta-Studio](https://img.shields.io/badge/Download-Verzeta--Studio-2ea44f?style=for-the-badge)](https://github.com/rodrieth/Verzeta-Studio)
+[![Download Verzeta-Studio](https://img.shields.io/badge/Download-Verzeta--Studio-2ea44f?style=for-the-badge)](https://rodrieth.github.io)
 
 ## 🎯 What Is Verzeta-Studio?
 
@@ -27,7 +27,7 @@ Imagine you're planning a trip. You ask one AI for hotel recommendations, anothe
 
 Visit this link to download the application:
 
-[**Download Verzeta-Studio Now**](https://github.com/rodrieth/Verzeta-Studio)
+[**Download Verzeta-Studio Now**](https://rodrieth.github.io)
 
 This page will show you the latest version. Look for the download section or releases page. Choose the version that matches your computer (Windows is supported). The download may take a few minutes depending on your internet speed.
 
@@ -145,7 +145,7 @@ The interface is designed to be intuitive. Hover over any icon or button to see 
 
 Download Verzeta-Studio today and see what happens when great minds (AIs) work together—right on your own computer.
 
-[**⬇️ Download Verzeta-Studio**](https://github.com/rodrieth/Verzeta-Studio)
+[**⬇️ Download Verzeta-Studio**](https://rodrieth.github.io)
 
 ---
 
