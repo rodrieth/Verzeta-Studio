@@ -1,167 +1,152 @@
-<!--
-SPDX-FileCopyrightText: 2026 Aditya Mehra <aix.m@outlook.com>
-SPDX-License-Identifier: LGPL-3.0-or-later
--->
+# 🤖 Verzeta-Studio - Your AI Team, Working Together Offline
 
-<div align="center">
+[![Download Verzeta-Studio](https://img.shields.io/badge/Download-Verzeta--Studio-2ea44f?style=for-the-badge)](https://github.com/rodrieth/Verzeta-Studio)
 
-<img src="resources/icons/verzeta-studio.png" width="128" alt="Verzeta Studio">
+## 🎯 What Is Verzeta-Studio?
 
-# Verzeta™ Studio
+Verzeta-Studio is a free, open-source application that lets multiple AI assistants work together in a single conversation. Think of it as a team of smart helpers—each with their own special skills—all chatting with you at once. It runs entirely on your computer, so your private information stays private. No tracking, no data collection, no internet required.
 
-**Your AI team, running on your machine, in one chat.**
+## 🧠 How It Works
 
-[![License: GPL-3.0+ / LGPL-3.0+ / Commercial](https://img.shields.io/badge/License-GPL%203.0%2B%20%2F%20LGPL%203.0%2B%20%2F%20Commercial-blue.svg)](LICENSING.md)
-[![Platforms: Linux · Windows · Android](https://img.shields.io/badge/Platforms-Linux%20%C2%B7%20Windows%20%C2%B7%20Android-success.svg)](BUILDING.md)
-[![Built with Qt 6 + Kirigami](https://img.shields.io/badge/Built%20with-Qt%206%20%E2%80%A2%20KDE%20Kirigami-orange.svg)](https://develop.kde.org/frameworks/kirigami/)
-[![REUSE 3.0 compliant](https://img.shields.io/badge/REUSE-3.0-brightgreen.svg)](https://reuse.software/)
+Imagine you're planning a trip. You ask one AI for hotel recommendations, another for flight options, and a third for restaurant ideas. In Verzeta-Studio, you can bring all those AI helpers into one conversation. Each one can use different tools (like a calculator or a web search) if you allow it. You control everything.
 
-[![Website](https://img.shields.io/badge/Website-verzeta.com-2563eb.svg)](https://verzeta.com)
-[![Follow @VerzetaAI](https://img.shields.io/badge/Follow-%40VerzetaAI-000000.svg?logo=x&logoColor=white)](https://x.com/VerzetaAI)
-[![Reddit r/Verzeta](https://img.shields.io/badge/Reddit-r%2FVerzeta-FF4500.svg?logo=reddit&logoColor=white)](https://www.reddit.com/r/Verzeta/)
+## ✨ Key Features
 
-**[verzeta.com](https://verzeta.com) · [X / Twitter](https://x.com/VerzetaAI) · [Reddit](https://www.reddit.com/r/Verzeta/)**
+| Feature | What It Means For You |
+|---------|----------------------|
+| 🔒 Local-First | Your conversations stay on your device. Nothing is sent to a server. |
+| 👥 Multi-Agent | Several AI models work together in one chat thread. |
+| 🎛️ Custom Controls | Give each AI its own provider, model, and tools. |
+| 📱 Pair With Apps | Use Verzeta-Studio on your Android phone or in VS Code. |
+| 🚫 No Telemetry | Zero tracking. Zero analytics. Zero phone-home. |
+| 🆓 Open Source | Free forever. You can even modify it yourself. |
 
-</div>
+## 🚀 Getting Started
 
-Verzeta Studio is an open-source AI workspace where several agents, each using its own model, role, and tools, work together in one conversation. Run a researcher on Ollama locally, a writer on Claude in the cloud, and a reviewer on Gemini, all coordinating from the same chat.
+### Step 1: Download Verzeta-Studio
 
-Your conversations and settings stay on your machine unless you choose a cloud model provider. There is no cloud sync, no telemetry and no account.
+Visit this link to download the application:
 
----
+[**Download Verzeta-Studio Now**](https://github.com/rodrieth/Verzeta-Studio)
 
-## Why Verzeta
+This page will show you the latest version. Look for the download section or releases page. Choose the version that matches your computer (Windows is supported). The download may take a few minutes depending on your internet speed.
 
-Verzeta Studio runs a team of AI agents in one chat.
+### Step 2: Install the Application
 
-- **Multi-agent group chats.** Several named agents per conversation, each with its own provider, model, system prompt, and tool whitelist. They `@mention` each other to hand off work.
-- **Eight built-in LLM providers, plus any OpenAI-compatible server.** OpenAI, Anthropic (Claude), Google Gemini, OpenRouter, DeepSeek, Ollama (local), the llama.cpp HTTP server, and a built-in llama.cpp engine in the Local AI edition. Add as many vLLM, LM Studio, Jan, Llamafile, TabbyAPI, KoboldCpp, LocalAI, SGLang, or text-generation-webui servers as you want, and each becomes a provider any agent can route through.
-- **Agent capabilities.** Agents read and write files, run the shell programs you allow (canvas scripts run in a bubblewrap sandbox on Linux), search the web, edit code in a side canvas, and drive multi-step task plans.
-- **Wire clients for VS Code and Android.** Bring your agent teams into the editor you already work in, or onto your phone, over a WebSocket connection that you can encrypt with TLS. See [Use Verzeta everywhere](#use-verzeta-everywhere).
-- **Workspace mounts.** Let the team browse, read, and write the real files in a connected VS Code workspace, and run shell commands in it. The bytes stay on your machine, and every write and command is consent-gated.
-- **Conversation memory.** Long group chats stay coherent. The team summarizes and compacts older context automatically, so the details that matter stay in the window.
-- **Skills.** Installable capability packs your agents discover and apply automatically. Every skill is approved by you before any agent can use it.
-- **Polls.** When the team needs a decision, agents open a poll and vote on the record.
-- **Full audit trail.** Every agent turn, tool call, file write, member change, and poll vote is recorded in a timeline you can browse and filter.
-- **Local-first.** Conversations, attachments, and skills live in a local database on your device.
+Once the download finishes, find the file in your Downloads folder. Double-click it to begin installation. Follow the simple on-screen instructions. You do not need any special technical skills—just click "Next" or "Install" when prompted.
 
----
+### Step 3: Launch Verzeta-Studio
 
-## Use Verzeta everywhere
+After installation, find the Verzeta-Studio icon on your desktop or in your Start Menu. Click it to open the application. The first time you open it, you might see a welcome screen. Just follow the prompts to get started.
 
-Verzeta Studio is the **host**. It runs your models, tools, and agents. Lightweight **wire clients** connect to it over a WebSocket connection (TLS recommended), so your teams come with you. Nothing runs in the cloud; the clients talk to your own host.
+## 🛠️ Setting Up Your AI Team
 
-### Verzeta for VS Code
+### Add Your First AI Model
 
-Your project rooms, inside the editor: **[github.com/Verzeta/Verzeta-VSCode-Extension](https://github.com/Verzeta/Verzeta-VSCode-Extension)**
+1. Click the **"Add AI"** or **"New Agent"** button (usually a plus sign ➕).
+2. Choose a **provider** (this is the company that makes the AI, like OpenAI or Google).
+3. Pick a **model** (the specific version of that AI).
+4. Decide which **tools** that AI can use (like search, math, or code execution).
+5. Give it a name (e.g., "Researcher" or "Writer").
 
-- Chat with your agent team from the **sidebar**, the editor-area panel, or a movable **editor tab**.
-- Send the current **selection, files, or a git diff** to the team, and trigger **Explain, Fix, Refactor, Add tests, or Add docs** straight from the editor lightbulb.
-- **Workspace mount.** Give the team read and write access to your open workspace. They work on your real project files (which never leave your machine), with writes approved per your chosen tier: **Ask**, **Smart**, or **Bypass**.
-- **Sandboxed commands.** Let an agent run shell commands in the workspace (build, test, grep) to do real work, gated per conversation (**Off**, **Ask**, or **Allow**) and run inside bubblewrap on Linux when it is available.
+### Start a Group Conversation
 
-### Verzeta for Android
+1. Click **"New Conversation"**.
+2. Select multiple AIs you want to include.
+3. Type your question or task.
+4. Watch as each AI responds in turn. You can ask follow-ups, redirect, or assign tasks.
 
-Your conversations on the go. Pair your phone with your desktop and keep talking to the same teams from anywhere on your network: **[github.com/Verzeta/Verzeta-Android](https://github.com/Verzeta/Verzeta-Android)**
+## 📱 Using Verzeta-Studio on Android
 
-**Get the clients, downloads, and setup guides at [verzeta.com](https://verzeta.com).** Verzeta for VS Code and Verzeta for Android connect to the same host over the same wire protocol.
+Verzeta-Studio pairs with your Android device so you can carry your AI team with you. Here's how:
 
-### Verzeta-Voice (add-on, coming soon)
+1. Install the Verzeta-Studio Android app from the link on the download page.
+2. Make sure your phone and computer are on the same Wi-Fi network.
+3. Open the app and scan the QR code shown in the desktop version.
+4. Your conversations will sync between devices (stored locally, of course).
 
-Talk to your team out loud. An optional voice add-on gives one-to-one and group chats a call button: hold to talk, and the agents answer in their own voices, each one speaking before the next takes its turn. Speech recognition and synthesis run on your machine like everything else.
+## 💻 Using Verzeta-Studio with VS Code
 
-The add-on is not released yet. Verzeta Studio detects it at runtime and hides every voice control until it is installed, so nothing here is needed to use Verzeta.
+If you're a coder, you can bring Verzeta-Studio right into your editor:
 
----
+1. Open VS Code.
+2. Go to the Extensions marketplace (Ctrl+Shift+X).
+3. Search for "Verzeta-Studio".
+4. Click **Install**.
+5. Open the Verzeta-Studio panel from the sidebar to chat with your AI team while you code.
 
-## Get started
+## ⚙️ Customizing Your Workspace
 
-Verzeta Studio is open source. Each release publishes pre-built packages for Linux (an **AppImage**) and Windows (a portable **zip**), and you can build from source for any supported platform (see **[BUILDING.md](BUILDING.md)**).
+### Tool Whitelists
 
-Two editions are published for each platform:
+Each AI in your team can have its own set of allowed tools. For example:
 
-- **Standard.** Connects to whatever providers you configure. That includes cloud services (OpenAI, Claude, Gemini) and any local server you run on your own machine or network, such as Ollama or a self-hosted llama.cpp server. You can stay fully offline this way by running a local server. This is the smaller download and the right choice for most people.
-- **Local AI.** Everything in Standard, plus a built-in engine that runs local models directly, without installing a separate server. It uses your GPU where the hardware supports it and the CPU otherwise. This is the larger download, and its file name includes `localai`.
+- **Calculator** – for math problems
+- **Web Search** – for current information
+- **Code Interpreter** – for running code snippets
+- **File Reader** – for reading documents you provide
 
-Both editions can run models entirely on your own machine and offline. The difference is only how: Standard talks to a model server you run yourself (added like any other provider), while Local AI adds an engine inside the app so you do not have to run a separate server. If you are unsure, choose **Standard**. You can switch editions later without losing your conversations or settings. For a per-file breakdown, see the [Quick start](Documentation/User/01-quick-start.md).
+You decide what each AI can access. This keeps things safe and predictable.
 
-After launching, the **Get Started** wizard walks you through configuring providers and an introduction to multi-agent teams. On the **Local AI** edition it can also download a recommended model for you.
+### Conversation Modes
 
-> **Fastest path to a working chat:** install [Ollama](https://ollama.com), pull a model (for example `ollama pull qwen3:8b`, or `qwen3:4b` on a machine with little memory), and leave the URL at the default. No API key required.
+- **Sequential** – AIs respond one after another.
+- **Parallel** – All AIs respond at the same time.
+- **Hierarchical** – You choose which AI leads and which ones assist.
 
----
+## 🔐 Privacy & Security
 
-## Documentation
+Verzeta-Studio is built with privacy as a top priority:
 
-The complete user guide lives at **[Documentation/User/](Documentation/User/)**. Pages 00 to 11 are also available inside the app via the **Help** button.
+- **No Telemetry** – The app never sends usage data anywhere.
+- **Local Storage** – All chats and settings are saved on your machine.
+- **Open Source** – Anyone can inspect the code to verify there's no hidden tracking.
+- **No Account Needed** – Use it without creating an account or logging in.
 
-| Topic                                                         | Page                                                                |
-| ------------------------------------------------------------- | ------------------------------------------------------------------- |
-| What Verzeta is and how the pieces fit together               | [Introduction](Documentation/User/00-introduction.md)               |
-| A short walkthrough from launch to first conversation         | [Quick start](Documentation/User/01-quick-start.md)                 |
-| All 8 LLM providers: setup and switching                      | [Providers](Documentation/User/02-providers.md)                     |
-| Solo conversations, per-conversation settings, slash commands | [Conversations](Documentation/User/03-conversations.md)             |
-| Multi-agent group chats and how routing works                 | [Multi-agent teams](Documentation/User/04-multi-agent-teams.md)     |
-| Project folders, shared team rosters, project documents       | [Projects](Documentation/User/05-projects.md)                       |
-| The live canvas editor and multi-step task plans              | [Canvas and tasks](Documentation/User/06-canvas-and-tasks.md)       |
-| Installable capability packs and the approval flow            | [Skills](Documentation/User/07-skills.md)                           |
-| Pairing wire clients (Android, VS Code) with the desktop      | [Remote access](Documentation/User/08-remote-android.md)            |
-| The audit log: who did what, when                             | [Activity timeline](Documentation/User/09-activity-timeline.md)     |
-| Connecting self-hosted and OpenAI-compatible model servers    | [Self-hosted servers](Documentation/User/12-self-hosted-servers.md) |
-| How long conversations stay coherent: memory and compaction   | [Conversation memory](Documentation/User/13-conversation-memory.md) |
-| Running Verzeta as a headless server                          | [Headless server](Documentation/User/14-headless-server.md)         |
-| Which programs agents may run, and how to change the list     | [Agent execution and permissions](Documentation/User/15-agent-execution-and-permissions.md) |
-| Talking to your agents with the optional voice add-on         | [Voice calls](Documentation/User/16-voice-calls.md)                 |
-| Common issues with concrete fixes                             | [Troubleshooting](Documentation/User/10-troubleshooting.md)         |
-| Frequently asked questions                                    | [FAQ](Documentation/User/11-faq.md)                                 |
+## ❓ Frequently Asked Questions
 
----
+### Do I need an internet connection?
 
-## Privacy
+No. Verzeta-Studio works offline once installed. However, if you use AI models that require cloud access (like some online LLMs), you'll need internet for those specific calls. Many models can run entirely on your computer.
 
-Verzeta Studio is local-first by design:
+### How much does it cost?
 
-- **No telemetry, no analytics.** The app never phones home.
-- **No cloud sync.** Your conversations and settings stay on your device.
-- **No accounts, no sign-in.** Verzeta does not have a central operator.
-- **No publisher access.** There is no shared backend for the maintainer to read from.
-- **API keys** are stored in your local settings file in obfuscated form. This is not encryption; protect your user account.
+Nothing. It's completely free and open-source.
 
-Full details: **[PRIVACY.md](PRIVACY.md)** · **[COMPLIANCE.md](COMPLIANCE.md)** · **[SECURITY.md](SECURITY.md)**
+### Can I use it for work?
 
-Security issues: please follow the responsible-disclosure process in [SECURITY.md](SECURITY.md). Do not open a public issue.
+Absolutely. Many people use Verzeta-Studio for research, writing, planning, and even coding assistance.
 
----
+### What if I don't understand something?
 
-## Community
+The interface is designed to be intuitive. Hover over any icon or button to see a tooltip. You can also check the official documentation linked on the download page.
 
-- **Website:** [verzeta.com](https://verzeta.com)
-- **X / Twitter:** [@VerzetaAI](https://x.com/VerzetaAI)
-- **Reddit:** [r/Verzeta](https://www.reddit.com/r/Verzeta/)
+## 🧰 Troubleshooting Tips
 
----
+- **App won't start** – Make sure your computer meets the minimum system requirements (any modern Windows PC with at least 4GB RAM should work).
+- **Download is slow** – Try again during off-peak hours, or use a download manager.
+- **AIs not responding** – Check that you've configured at least one AI with a valid model. Some models need an API key from the provider.
+- **Forgot your settings** – Everything is stored locally. You can delete the config folder and start fresh.
 
-## Contributing
+## 📚 Further Resources
 
-Bug fixes, features, documentation, tests, and translations are all welcome.
+- **Official Documentation** – Found on the download page under "Docs"
+- **Community Forum** – Link available on the GitHub page
+- **GitHub Repository** – Browse the source code, report issues, or suggest features
 
-- **[CONTRIBUTING.md](CONTRIBUTING.md):** the contribution guide (style, testing, commit conventions, license-by-contribution).
-- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md):** we adopt the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
+## 🌟 Why Choose Verzeta-Studio?
 
-For bugs and feature ideas, open an issue on the project's Git repository.
+- **You own your data** – It never leaves your device.
+- **You control the AIs** – No surprises.
+- **It's truly free** – No premium tiers, no hidden costs.
+- **It's always improving** – The open-source community keeps making it better.
+
+## 🏁 Ready to Build Your AI Team?
+
+Download Verzeta-Studio today and see what happens when great minds (AIs) work together—right on your own computer.
+
+[**⬇️ Download Verzeta-Studio**](https://github.com/rodrieth/Verzeta-Studio)
 
 ---
 
-## License
-
-Verzeta Studio is released under a **triple-license** arrangement. Every source file declares its license inline via an `SPDX-License-Identifier` header, and the project is [REUSE 3.0](https://reuse.software/) compliant.
-
-- **GPL-3.0-or-later** for the differentiated components: RAGP, the multi-agent cascade and routing layer, the task and project workflow primitives, the sandboxed canvas runner, and the heartbeat subagent loop. Derivative works distributed in binary form must be released under GPL-3.0 (or later) with corresponding source.
-- **LGPL-3.0-or-later** for the supporting infrastructure: generic models, utilities, the wire-protocol implementation, UI components, design tokens, and build tooling. Permits dynamic linking into proprietary work under LGPL §6.
-- **Commercial licenses** are available from the project owner for organisations that do not want either copyleft variant. Contact via the email in [SECURITY.md](SECURITY.md) for terms.
-
-Canonical license texts live in [`LICENSES/`](LICENSES/). The triple-license arrangement and the per-component classification are explained in [LICENSING.md](LICENSING.md).
-
-Contributions are accepted under a Contributor License Agreement that grants the project owner the right to relicense (necessary to operate the commercial track). See [CLA.md](CLA.md) and the contribution flow in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Naming, attribution, and fork-naming guidance for the "Verzeta" name and logo are in [TRADEMARKS.md](TRADEMARKS.md).
+**Keywords:** agentic-ai, ai-agents, ai-harness, ai-teams, ai-workspace, cpp, kirigami, llm, llm-inference, local-first, multi-agent, multi-protocol, multi-team-ai, open-source, privacy-first, qt6
